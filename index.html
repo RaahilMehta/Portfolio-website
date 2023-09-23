@@ -20,6 +20,7 @@
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <img src="sun.png" id="icon">
                 <i class="fa-solid fa-bars" onclick="openmenu()"  ></i>
             </nav>
             <div class="header-text">
@@ -235,6 +236,22 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <!-- for dark mode /theme -->
+
+  
+  }
+  <script>
+    var icon = document.getElementById("icon");
+  icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src =  "moon.png";
+    }else{
+        icon.src = "sun.png";
+    }
+  }
+
   </script>
 </body>
 </html>
