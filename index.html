@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website </title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eb09a53382.js" crossorigin="anonymous"></script>
 </head>
@@ -204,14 +205,17 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+
+
+
     <!--js code for open and close menu on mobile ver  -->
     <script>
         var sidemeu = document.getElementById("sidemenu");
         function openmenu(){
-            sidemeu.style.left ="0";
+            sidemeu.style.right="0";
         }
         function closemenu(){
-            sidemeu.style.left ="-200px";
+            sidemeu.style.right ="-200px";
         }
 
     </script>
@@ -238,9 +242,6 @@
     })
   </script>
   <!-- for dark mode /theme -->
-
-  
-  }
   <script>
     var icon = document.getElementById("icon");
   icon.onclick = function(){
