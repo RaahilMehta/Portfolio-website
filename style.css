@@ -352,7 +352,7 @@ nav .fa-solid{
         position: fixed;
         top: 0;
         right: -200px;/* side nav bar will become hidden */
-        width: 200px;
+        width: 300px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -362,6 +362,7 @@ nav .fa-solid{
     nav ul li{
         display: block;
         margin: 25px;
+        padding-right: 100px;
     }
     /* arranging cross elemet */
     nav ul .fa-solid{
